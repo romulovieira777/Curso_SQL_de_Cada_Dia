@@ -1,4 +1,4 @@
-### :computer: Comandos em SQL que foram usados nos Arquivos acima: :rocket:
+### :computer: Funções em SQL que foram usados nos Arquivos acima: :rocket:
 **O que faz a função from:**
 
 É usada para direcionar uma tabela no banco de dados.
