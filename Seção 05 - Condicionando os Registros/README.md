@@ -173,6 +173,26 @@ WHERE
 GO
 ~~~
 
+**O que faz a função SELECT:**
+
+É usada para recuperar linhas e colunas de uma tabela no banco de dados.
+
+**Sintaxe**
+
+~~~sql
+SELECT colunas;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+  Nome
+, Salario
+FROM
+  TB_USUARIOS;
+~~~
+
 **O que faz a função WHERE:**
 
 Especifica o critério de pesquisa para as linhas retornadas pela consulta.
