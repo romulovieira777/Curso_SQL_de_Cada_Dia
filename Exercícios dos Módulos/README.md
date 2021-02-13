@@ -327,3 +327,150 @@ FROM
 WHERE
   Salario > 6.000;
 ~~~
+
+**O que faz a função >:**
+
+Verifica se do dado é maior.
+
+**Sintaxe**
+
+~~~sql
+> <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+WHERE
+	NOTA > 8.0
+GO
+
+**O que faz a função >=:**
+
+Verifica se do dado é igual ou maior.
+
+**Sintaxe**
+
+~~~sql
+>= <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+WHERE
+	NOTA >= 8.0
+GO
+
+**O que faz a função <:**
+
+Verifica se do dado é menor.
+
+**Sintaxe**
+
+~~~sql
+< <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+WHERE
+	NOTA < 8.0
+GO
+
+**O que faz a função <=:**
+
+Verifica se do dado é menor ou igual.
+
+**Sintaxe**
+
+~~~sql
+<= <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+WHERE
+	NOTA <= 8.0
+GO
+
+**O que faz a função =:**
+
+Verifica se do dado é igual.
+
+**Sintaxe**
+
+~~~sql
+= <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+WHERE
+	NOTA = 8.0
+GO
+
+**O que faz a função !=:**
+
+Verifica se do dado é diferente.
+
+**Sintaxe**
+
+~~~sql
+!= <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+WHERE
+	NOTA != 8.0
+GO
+
+**O que faz a função %:**
+
+É um caracter coringa usado para encontrar palavras.
+
+**Sintaxe**
+
+~~~sql
+% <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+WHERE
+	NOME LIKE 'C%'
+~~~
