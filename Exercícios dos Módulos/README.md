@@ -70,6 +70,28 @@ ORDER BY
 GO
 ~~~
 
+**O que faz a função DESC:**
+
+É usada para classificar em ordem descendente.
+
+**Sintaxe**
+
+~~~sql
+DESC
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	NOTA
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+ORDER BY
+	NOTA DESC
+GO
+~~~
+
 **O que faz a função BETWEEN:**
 
 É usada para seleção de intervalo em registros.
@@ -113,6 +135,27 @@ SELECT DISTINCT
 FROM
   [SQL_DE_CADA_DIA].[DBO].[ALUNO]
 GO
+~~~
+
+**O que faz a função IN:**
+
+Determina se um determinado valor corresponde a qualquer valor em uma subconsulta ou lista.
+
+**Sintaxe**
+
+~~~sql
+IN <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[PROFESSOR]
+WHERE
+	ESPECIALIDADE IN ('Matematica', 'Literatura')
 ~~~
 
 **O que faz a função IS NOT NULL:**
@@ -284,5 +327,3 @@ FROM
 WHERE
   Salario > 6.000;
 ~~~
-
-
