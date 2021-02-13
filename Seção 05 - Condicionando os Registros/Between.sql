@@ -1,0 +1,17 @@
+/* Selecionando Dados Utilizando a Cláusula Between */
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+WHERE
+	NOTA BETWEEN 8 AND 9
+GO
+
+
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+WHERE
+	NOTA BETWEEN 7 AND 9
+GO

@@ -1,0 +1,17 @@
+/* Selecionando Dados da Tabela Nulos */
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+WHERE
+	CIDADE IS NULL
+GO
+
+
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+WHERE
+	CIDADE IS NOT NULL
+GO
