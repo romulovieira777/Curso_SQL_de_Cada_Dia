@@ -1,4 +1,28 @@
 ### :computer: Comandos em SQL que foram usados nos Arquivos acima: :rocket:
+**O que faz a função AND:**
+
+É usada para filtrar um registro se ambos forem verdadeiros em uma consulta.
+
+**Sintaxe**
+
+~~~sql
+AND <nome>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+  , BAIRRO			AS [ONDE MORA]
+  , CEP
+  , ENDERECO
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+WHERE
+	SEXO = 'M' AND BAIRRO = 'Asa Norte'
+GO
+~~~
+
 **O que faz a função AS:**
 
 É usada para dar nome alternativo para colunas ou tabelas.
@@ -22,6 +46,52 @@ FROM
 GO
 ~~~
 
+**O que faz a função ASC:**
+
+É usada para classificar em ordem ascendente.
+
+**Sintaxe**
+
+~~~sql
+ASC
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+WHERE
+	NOME LIKE 'C%' AND CIDADE IS NOT NULL
+ORDER BY
+	NOME ASC
+GO
+~~~
+
+**O que faz a função BETWEEN:**
+
+É usada para seleção de intervalo em registros.
+
+**Sintaxe**
+
+~~~sql
+BETWEEN <nome>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+WHERE
+	NOTA BETWEEN 8 AND 9 AND FALTA >= 2
+GO
+~~~
+
 **O que faz a função DISTINCT:**
 
 Consultas com valores distintos, sem repetição.
@@ -42,6 +112,115 @@ SELECT DISTINCT
   BAIRRO
 FROM
   [SQL_DE_CADA_DIA].[DBO].[ALUNO]
+GO
+~~~
+
+**O que faz a função IS NOT NULL:**
+
+É usada para selecionar valores não nulos.
+
+**Sintaxe**
+
+~~~sql
+IS NOT NULL
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+WHERE
+	NOME LIKE 'C%' AND CIDADE IS NOT NULL
+~~~
+
+**O que faz a função FROM:**
+
+É usada para direcionar uma tabela no banco de dados.
+
+**Sintaxe**
+
+~~~sql
+FROM tabela;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+  Nome
+, Salario
+FROM
+  TB_USUARIOS;
+~~~
+
+**O que faz a função LIKE:**
+
+É usada para determinaR se uma cadeia de caracteres são correspondente.
+
+**Sintaxe**
+
+~~~sql
+LIKE <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+WHERE
+	NOME LIKE 'C%'
+GO
+~~~
+
+**O que faz a função OR:**
+
+É usada para filtrar um registro se um for verdadeiro em uma consulta.
+
+**Sintaxe**
+
+~~~sql
+OR <nome>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+WHERE
+	NOTA < 7 OR FALTA >= 4
+GO
+~~~
+
+**O que faz a função ORDER BY:**
+
+Permite que a ordenação seja feita por uma ou mais de uma coluna.
+
+**Sintaxe**
+
+~~~sql
+ORDER BY <expressâo>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+WHERE
+	NOME LIKE 'C%' AND CIDADE IS NOT NULL
+ORDER BY
+	NOME ASC
 GO
 ~~~
 
@@ -85,5 +264,25 @@ FROM
   TB_USUARIOS;
 ~~~
 
+**O que faz a função WHERE:**
+
+Especifica o critério de pesquisa para as linhas retornadas pela consulta.
+
+**Sintaxe**
+
+~~~sql
+WHERE condição;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+  *
+FROM
+  TB_USUARIOS
+WHERE
+  Salario > 6.000;
+~~~
 
 
