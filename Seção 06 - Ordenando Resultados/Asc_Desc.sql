@@ -1,0 +1,72 @@
+/* Selecionando Dados da Tabela */
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+ORDER BY
+	NOME ASC
+GO
+
+
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+ORDER BY
+	NOME DESC
+GO
+
+
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+ORDER BY
+	BAIRRO ASC
+GO
+
+
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+ORDER BY
+	NOTA ASC
+GO
+
+
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+ORDER BY
+	DATANASCIMENTO ASC
+GO
+
+
+SELECT
+	*
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+ORDER BY
+	NOME
+  , BAIRRO
+GO
+
+
+/* Inserindo Dados na Tabela Aluno */
+INSERT INTO 
+	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
+VALUES(
+	'UC10003145'
+  , 'Alexandre Aguiar'
+  , 'M'
+  , NULL
+  , NULL
+  , NULL
+  , NULL
+  , 'Gama'
+  , NULL
+  , NULL
+)
+GO
