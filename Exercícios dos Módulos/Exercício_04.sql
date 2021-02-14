@@ -1,29 +1,29 @@
-/* ExercÌcios CapÌtulo 06 */
+/* Exerc√≠cios Cap√≠tulo 06 */
 
 
 /* 1 - Traga numa consulta:
 
-1. A nota m·xima
+1. A nota m√°xima
 
-2. A nota mÌnima
+2. A nota m√≠nima
 
 3. A quantidade de faltas de todos os alunos
 
-4. A mÈdia aritmÈtica das notas
+4. A m√©dia aritm√©tica das notas
 
-5. O somatÛrio das notas */
+5. O somat√≥rio das notas */
 SELECT
-	MAX(NOTA)				AS [NOTA M¡XIMA]
-  , MIN(NOTA)				AS [NOTA MÕNIMA]
+    MAX(NOTA)				AS [NOTA M√ÅXIMA]
+  , MIN(NOTA)				AS [NOTA M√çNIMA]
   , COUNT(FALTA)			AS [CONTAGEM DE FALTAS]
-  , AVG(NOTA)				AS [M…DIA DAS NOTAS]
+  , AVG(NOTA)				AS [M√âDIA DAS NOTAS]
   , SUM(NOTA)				AS [TOTAL DAS NOTAS]
 FROM
 	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
 GO
 
 
-/* 2 - H· um problema nesse comando abaixo. Encontre o erro e corrija.
+/* 2 - H√° um problema nesse comando abaixo. Encontre o erro e corrija.
 
 SELECT falta, COUNT(falta) FROM FREQUENTA*/
 SELECT
@@ -37,7 +37,7 @@ GO
 
 Use a tabela PROFESSOR.*/
 SELECT
-	MIN(DATANASCIMENTO)		AS [MAIS VELHO]
+    MIN(DATANASCIMENTO)		AS [MAIS VELHO]
   , MAX(DATANASCIMENTO)		AS [MAIS NOVO]
 FROM
 	[SQL_DE_CADA_DIA].[DBO].[PROFESSOR]
