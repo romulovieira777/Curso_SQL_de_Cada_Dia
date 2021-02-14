@@ -1,22 +1,22 @@
-/* ExercÌcio CapÌtulo 07 */
+/* Exerc√≠cio Cap√≠tulo 07 */
 
 
 /* 1 - Traga numa consulta:
 
-1. A quantidade de professores que estuda em cada faculdade - atravÈs de agrupamento.
+1. A quantidade de professores que estuda em cada faculdade - atrav√©s de agrupamento.
 
-2. Nomeie as colunas de resultado usando 'ALIAS' para: 'Faculdade de FormaÁ„o' e 'Qtde professores'
+2. Nomeie as colunas de resultado usando 'ALIAS' para: 'Faculdade de Forma√ß√£o' e 'Qtde professores'
 
 3. Ordene em ORDEM CRESCENTE pelo nome da faculdade
 
 Ex:
 
-Faculdade de FormaÁ„o       | Quantidade
+Faculdade de Forma√ß√£o       | Quantidade
 
 Universidade de Brasilia      2 */
 SELECT
-	NOME_FACULDA_DE_FORMACAO			AS [FACULDADE DE FORMA«√O]	
-  , COUNT(NOME)							AS [QUANTIDADE DE PROFESSORES]
+    NOME_FACULDA_DE_FORMACAO			AS [FACULDADE DE FORMA√á√ÉO]	
+  , COUNT(NOME)					AS [QUANTIDADE DE PROFESSORES]
 FROM
 	[SQL_DE_CADA_DIA].[DBO].[PROFESSOR]
 GROUP BY
@@ -26,24 +26,24 @@ ORDER BY
 GO
 
 
-/* 2 - Usando o exercÌcio 1 como exemplo, agrupe tambÈm pelo sexo.
+/* 2 - Usando o exerc√≠cio 1 como exemplo, agrupe tamb√©m pelo sexo.
 
 Ex:
 
-Faculdade de FormaÁ„o       | Sexo | Quantidade
+Faculdade de Forma√ß√£o       | Sexo | Quantidade
 
 Universidade de Brasilia      M       2 */
 SELECT
-	NOME_FACULDA_DE_FORMACAO			AS [FACULDADE DE FORMA«√O]
+    NOME_FACULDA_DE_FORMACAO			AS [FACULDADE DE FORMA√á√ÉO]
   , SEXO
-  , COUNT(NOME)							AS [QUANTIDADE DE PROFESSORES]
+  , COUNT(NOME)					AS [QUANTIDADE DE PROFESSORES]
 FROM
 	[SQL_DE_CADA_DIA].[DBO].[PROFESSOR]
 GROUP BY
 	NOME_FACULDA_DE_FORMACAO
   , SEXO
 ORDER BY
-	NOME_FACULDA_DE_FORMACAO
+    NOME_FACULDA_DE_FORMACAO
   , SEXO
 GO
 
@@ -56,11 +56,11 @@ FROM PROFESSOR
 
 GROUP BY especialidade */
 SELECT
-	ESPECIALIDADE
+    ESPECIALIDADE
   , NOME_FACULDA_DE_FORMACAO
 FROM
 	[SQL_DE_CADA_DIA].[DBO].[PROFESSOR]
 GROUP BY
-	ESPECIALIDADE
+    ESPECIALIDADE
   , NOME_FACULDA_DE_FORMACAO
 GO
