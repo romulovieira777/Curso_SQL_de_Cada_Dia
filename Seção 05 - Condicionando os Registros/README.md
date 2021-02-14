@@ -234,6 +234,7 @@ FROM
 WHERE
 	NOTA > 8.0
 GO
+~~~
 
 **O que faz a função >=:**
 
@@ -255,6 +256,7 @@ FROM
 WHERE
 	NOTA >= 8.0
 GO
+~~~
 
 **O que faz a função <:**
 
@@ -276,6 +278,7 @@ FROM
 WHERE
 	NOTA < 8.0
 GO
+~~~
 
 **O que faz a função <=:**
 
@@ -297,6 +300,7 @@ FROM
 WHERE
 	NOTA <= 8.0
 GO
+~~~
 
 **O que faz a função =:**
 
@@ -318,6 +322,7 @@ FROM
 WHERE
 	NOTA = 8.0
 GO
+~~~
 
 **O que faz a função !=:**
 
@@ -339,6 +344,7 @@ FROM
 WHERE
 	NOTA != 8.0
 GO
+~~~
 
 **O que faz a função %:**
 
@@ -359,4 +365,5 @@ FROM
 	[SQL_DE_CADA_DIA].[DBO].[ALUNO]
 WHERE
 	NOME LIKE 'C%'
+GO
 ~~~
