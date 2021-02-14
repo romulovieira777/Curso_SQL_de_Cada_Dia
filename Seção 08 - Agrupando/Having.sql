@@ -1,6 +1,6 @@
 /* Selecionando Dados da Tabela */
 SELECT
-	CIDADE
+    CIDADE
   , BAIRRO
   , COUNT(*)			AS [CONTAGEM DE LINHAS]
 FROM
@@ -8,7 +8,7 @@ FROM
 WHERE
 	CIDADE IS NOT NULL
 GROUP BY
-	CIDADE
+    CIDADE
   , BAIRRO
 HAVING
 	BAIRRO LIKE '%Sul'
