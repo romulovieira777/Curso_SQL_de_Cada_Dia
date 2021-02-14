@@ -240,6 +240,31 @@ FROM
   TB_USUARIOS;
 ~~~
 
+**O que faz a função GROUP BY:**
+
+É responsável por determinar em quais grupos devem ser colocadas as linhas de saída.
+
+**Sintaxe**
+
+~~~sql
+GROUP BY <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+    NOME_FACULDA_DE_FORMACAO			AS [FACULDADE DE FORMAÇÃO]	
+  , COUNT(NOME)					AS [QUANTIDADE DE PROFESSORES]
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[PROFESSOR]
+GROUP BY
+	NOME_FACULDA_DE_FORMACAO
+ORDER BY
+	NOME_FACULDA_DE_FORMACAO
+GO
+~~~
+
 **O que faz a função LIKE:**
 
 É usada para determinaR se uma cadeia de caracteres são correspondente.
@@ -346,26 +371,6 @@ WHERE
 ORDER BY
 	NOME ASC
 GO
-~~~
-
-**O que faz a função FROM:**
-
-É usada para direcionar uma tabela no banco de dados.
-
-**Sintaxe**
-
-~~~sql
-FROM tabela;
-~~~
-
-**Exemplo**
-
-~~~sql
-SELECT
-  Nome
-, Salario
-FROM
-  TB_USUARIOS;
 ~~~
 
 **O que faz a função SELECT:**
