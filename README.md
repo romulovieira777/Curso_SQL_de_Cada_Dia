@@ -1,5 +1,5 @@
 # SQL Server
-### Curso de ESQL Server na Udemy 
+### Curso de SQL Server na Udemy 
 #### :computer: Temas abordados durante o curso foram :rocket:
 - Seção 01 - Apresentação
 - Seção 02 - Conceitos de Base de Dados
@@ -12,6 +12,6 @@
 - [Seção 09 - Convertendo Dados](https://github.com/romulovieira777/Curso_SQL_de_Cada_Dia/tree/main/Se%C3%A7%C3%A3o%2009%20-%20Convertendo%20Dados)
 - [Seção 10 - Manipulando Strings](https://github.com/romulovieira777/Curso_SQL_de_Cada_Dia/tree/main/Se%C3%A7%C3%A3o%2010%20-%20Manipulando%20Strings)
 - [Seção 11 - Juntando Tabelas](https://github.com/romulovieira777/Curso_SQL_de_Cada_Dia/tree/main/Se%C3%A7%C3%A3o%2011%20-%20Juntando%20Tabelas)
-- []()
+- [Seção 12 - Outras Manipulações]()
 
 Link para o curso 100% Gratuito: [Udemy](https://www.udemy.com/course/sql-de-cada-dia/)
