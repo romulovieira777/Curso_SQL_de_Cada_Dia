@@ -9,6 +9,9 @@
 - [Seção 06 - Ordenando Resultados](https://github.com/romulovieira777/Curso_SQL_de_Cada_Dia/tree/main/Se%C3%A7%C3%A3o%2006%20-%20Ordenando%20Resultados)
 - [Seção 07 - Funções de Agrupamento](https://github.com/romulovieira777/Curso_SQL_de_Cada_Dia/tree/main/Se%C3%A7%C3%A3o%2007%20-%20Fun%C3%A7%C3%B5es%20de%20Agrupamento)
 - [Seção 08 - Agrupando](https://github.com/romulovieira777/Curso_SQL_de_Cada_Dia/tree/main/Se%C3%A7%C3%A3o%2008%20-%20Agrupando)
-
+- [Seção 09 - Convertendo Dados](https://github.com/romulovieira777/Curso_SQL_de_Cada_Dia/tree/main/Se%C3%A7%C3%A3o%2009%20-%20Convertendo%20Dados)
+- [Seção 10 - Manipulando Strings](https://github.com/romulovieira777/Curso_SQL_de_Cada_Dia/tree/main/Se%C3%A7%C3%A3o%2010%20-%20Manipulando%20Strings)
+- [Seção 11 - Juntando Tabelas](https://github.com/romulovieira777/Curso_SQL_de_Cada_Dia/tree/main/Se%C3%A7%C3%A3o%2011%20-%20Juntando%20Tabelas)
+- []()
 
 Link para o curso 100% Gratuito: [Udemy](https://www.udemy.com/course/sql-de-cada-dia/)
