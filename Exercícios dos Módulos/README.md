@@ -125,7 +125,8 @@ CAST( <expressão> );
 **Exemplo**
 
 ~~~sql
-CAST(DATANASCIMENTO AS VARCHAR(4)) = '1990'
+SELECT
+	CAST(DATANASCIMENTO AS VARCHAR(4)) = '1990'
 ~~~
 
 **O que faz a função COUNT:**
