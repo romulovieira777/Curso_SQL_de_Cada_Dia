@@ -211,6 +211,35 @@ FROM
 GO
 ~~~
 
+**O que faz a função HAVING:**
+
+Determina uma condição de busca para um grupo ou um conjunto de registros, definindo critérios para limitar os resultados obtidos a partir do agrupamento de registros.
+
+**Sintaxe**
+
+~~~sql
+HAVING <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+    P.NOME
+  , COUNT(T.COD_TURMA)			AS [QUANTIDADE DE TURMAS]
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[PROFESSOR] P
+INNER JOIN [SQL_DE_CADA_DIA].[DBO].[ENSINA] E ON P.MATRICULA = E.MATRICULA
+INNER JOIN [SQL_DE_CADA_DIA].[DBO].[TURMA] T ON E.COD_TURMA = T.COD_TURMA
+GROUP BY
+	P.NOME
+HAVING
+	COUNT(T.COD_TURMA) > 1
+ORDER BY
+	[QUANTIDADE DE TURMAS]
+GO
+~~~
+
 **O que faz a função IN:**
 
 Determina se um determinado valor corresponde a qualquer valor em uma subconsulta ou lista.
@@ -230,6 +259,83 @@ FROM
 	[SQL_DE_CADA_DIA].[DBO].[PROFESSOR]
 WHERE
 	ESPECIALIDADE IN ('Matematica', 'Literatura')
+~~~
+
+**O que faz a função INTO:**
+
+Cria uma tabela no grupo de arquivos padrão e insere nela as linhas resultantes da consulta.
+
+**Sintaxe**
+
+~~~sql
+INTO <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+ELECT
+    F.MATRICULA
+  , A.NOME
+  , A.SEXO
+INTO
+	[SQL_DE_CADA_DIA].[DBO].[ALUNOS APROVADOS]
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA] F
+INNER JOIN [SQL_DE_CADA_DIA].[DBO].[ALUNO] A ON F.MATRICULA = A.MATRICULA
+WHERE
+	NOTA >= 7 AND FALTA < 4
+GO
+~~~
+
+**O que faz o comando INSERT INTO:**
+
+Adiciona uma ou mais linhas a uma tabela ou exibição.
+
+**Sintaxe**
+
+~~~sql
+INSERT INTO nome_tabela (lista-de-campos)
+VALUES (lista_dados);
+~~~
+
+**Exemplo**
+
+~~~sql
+INSERT INTO TB_USUSARIOS(
+  Id_Usuario
+, Nome
+, Salario
+, Data_de_Admissao
+) VALUES (
+  ''
+, 'Felicty Smoak'
+, 6.500
+, 20120725
+);
+~~~
+
+**O que faz a função INNER JOIN:**
+
+Permite usar um operador de comparação para comparar os valores de colunas provenientes de tabelas associadas
+
+**Sintaxe**
+
+~~~sql
+INNER JOIN <expressão>;
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT
+    P.MATRICULA
+  , P.NOME
+  , P.ESPECIALIDADE
+FROM
+	[SQL_DE_CADA_DIA].[DBO].[PROFESSOR] P
+INNER JOIN [SQL_DE_CADA_DIA].[DBO].[ENSINA] E ON P.MATRICULA = E.MATRICULA
+GO
 ~~~
 
 **O que faz a função IS NOT NULL:**
@@ -358,7 +464,7 @@ FROM
 GO
 ~~~
 
- que faz a função MIN:**
+ **O que faz a função MIN:**
 
 É usada para determinar o valor mínimo.
 
@@ -376,6 +482,29 @@ SELECT
 FROM
 	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
 GO
+~~~
+
+**O que faz a função NULL:**
+
+Permite a entrada de valores nulos.
+
+**Sintaxe**
+
+~~~sql
+NULL
+~~~
+
+**Exemplo**
+
+~~~sql
+SELECT 
+  LastName
+, FirstName
+, Address
+FROM
+  Persons
+WHERE
+  Address NULL
 ~~~
 
 **O que faz a função OR:**
@@ -442,6 +571,28 @@ SELECT
 GO
 ~~~
 
+**O que faz a função SET:**
+
+É usada para atribuir variáveis.
+
+**Sintaxe**
+
+~~~sql
+set colunas;
+~~~
+
+**Exemplo**
+
+~~~sql
+UPDATE
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+SET
+	NOTA = 7.50
+WHERE 
+	MATRICULA = 'UC12005258'
+GO
+~~~
+
 **O que faz a função SELECT:**
 
 É usada para recuperar linhas e colunas de uma tabela no banco de dados.
@@ -484,7 +635,7 @@ GO
 
 **O que faz a função UPPER:**
 
-Retorna uma expressão de caractere com dados de caractere em minúsculas convertidos em maiúsculas..
+Retorna uma expressão de caractere com dados de caractere em minúsculas convertidos em maiúsculas.
 
 **Sintaxe**
 
@@ -498,6 +649,54 @@ UPPER( <expressão> );
 SELECT
 	UPPER(BAIRRO)
 GO
+~~~
+
+**O que faz a função UPDATE:**
+
+Permite atualizar dados em uma coluna de um registro em uma tabela, ou todas as colunas em todos os registros na tabela.
+
+**Sintaxe**
+
+~~~sql
+UPDATE( <expressão> );
+~~~
+
+**Exemplo**
+
+~~~sql
+UPDATE
+	[SQL_DE_CADA_DIA].[DBO].[FREQUENTA]
+SET
+	NOTA = 7.50
+WHERE 
+	MATRICULA = 'UC12005258'
+GO
+~~~
+
+**O que faz o função VALUES:**
+
+Identifica o valor a ser inserido em uma tabela de banco de dados.
+
+**Sintaxe**
+
+~~~sql
+VALUES();
+~~~
+
+**Exemplo**
+
+~~~sql
+INSERT INTO TB_USUSARIOS(
+	Id_Usuario
+  , Nome
+  , Salario
+  , Data_de_Admissao
+) VALUES (
+	''
+  , 'Felicty Smoak'
+  , 6.500
+  , 20120725
+);
 ~~~
 
 **O que faz a função WHERE:**
